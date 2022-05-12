@@ -21,5 +21,5 @@ echo 'src-git lienol https://github.com/Lienol/openwrt-package' >>feeds.conf.def
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 
-# 取消bootstrap为默认主题
-sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
+# Set default theme to luci-theme-argon
+uci set luci.main.mediaurlbase='/luci-static/argon'
