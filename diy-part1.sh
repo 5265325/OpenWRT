@@ -20,6 +20,3 @@
 echo 'src-git lienol https://github.com/Lienol/openwrt-package' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-
-# Set default theme to luci-theme-argon
-uci set luci.main.mediaurlbase='/luci-static/argon'
